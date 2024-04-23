@@ -1,0 +1,28 @@
+local function teleportarJogador()
+    local player = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+
+    local cframe = CFrame.new(
+        -808.167419, 326.030365, 3.00979161, 
+        0.930211961, 0.00832094159, 0.366928309, 
+        0.00241779699, 0.999582469, -0.0287972372, 
+        -0.367014647, 0.0276746899, 0.929803371
+    )
+
+    character:SetPrimaryPartCFrame(cframe)
+end
+
+local function onCharacterAdded(character)
+    local player = game.Players:GetPlayerFromCharacter(character)
+    if player then
+        teleportarJogador()
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(player)
+    player.CharacterAdded:Connect(function(character)
+        onCharacterAdded(character)
+    end)
+end)
+
+teleportarJogador()

@@ -150,7 +150,7 @@ ArenaTP.BorderSizePixel = 0
 ArenaTP.Position = UDim2.new(0.21192053, 0, 0.193771631, 0)
 ArenaTP.Size = UDim2.new(0, 350, 0, 33)
 ArenaTP.Font = Enum.Font.FredokaOne
-ArenaTP.Text = "Auto Teleport to Arena"
+ArenaTP.Text = "Teleport to Arena (Do not use if you not in lobby)"
 ArenaTP.TextColor3 = Color3.fromRGB(255, 255, 255)
 ArenaTP.TextSize = 17.000
 
@@ -170,34 +170,19 @@ local function YRKJIF_fake_script() -- ArenaTP.Teleporter
 	local script = Instance.new('LocalScript', ArenaTP)
 
 	script.Parent.MouseButton1Down:connect(function()
-		local function teleportarJogador()
-    local player = game.Players.LocalPlayer
-    local character = player.Character or player.CharacterAdded:Wait()
-
-    local cframe = CFrame.new(
-        -808.167419, 326.030365, 3.00979161, 
-        0.930211961, 0.00832094159, 0.366928309, 
-        0.00241779699, 0.999582469, -0.0287972372, 
-        -0.367014647, 0.0276746899, 0.929803371
-    )
-
-    character:SetPrimaryPartCFrame(cframe)
-end
-
-local function onCharacterAdded(character)
-    local player = game.Players:GetPlayerFromCharacter(character)
-    if player then
-        teleportarJogador()
-    end
-end
-
-game.Players.PlayerAdded:Connect(function(player)
-    player.CharacterAdded:Connect(function(character)
-        onCharacterAdded(character)
-    end)
-end)
-
-teleportarJogador()
+		local player = game.Players.LocalPlayer
+		local character = player.Character or player.CharacterAdded:Wait()
+	
+		local cframe = CFrame.new(
+			-808.167419, 326.030365, 3.00979161, 
+			0.930211961, 0.00832094159, 0.366928309, 
+			0.00241779699, 0.999582469, -0.0287972372, 
+			-0.367014647, 0.0276746899, 0.929803371
+		)
+	
+		character:SetPrimaryPartCFrame(cframe)
+		
+	end)
 end
 coroutine.wrap(YRKJIF_fake_script)()
 local function XNCGCZ_fake_script() -- ScreenGui.LocalScript 

@@ -277,5 +277,7 @@ local function YJEE_fake_script() -- InvsButton.Teleporter
 
 	script.Parent.MouseButton1Down:connect(function()
 		game:GetService("ReplicatedStorage"):WaitForChild("Ghostinvisibilityactivated"):FireServer()
+
 end
+
 coroutine.wrap(YJEE_fake_script)()

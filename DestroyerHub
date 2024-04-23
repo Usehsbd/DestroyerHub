@@ -10,24 +10,22 @@ local Title = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local CloseUI = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local ArenaTP = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local BobFarm = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local ON = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
-local InvsButton = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
 local FunctiosPart = Instance.new("Frame")
-local UICorner_8 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local Moresoon = Instance.new("TextButton")
-local UICorner_9 = Instance.new("UICorner")
+local UICorner_5 = Instance.new("UICorner")
 local Frame = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
 local Title_2 = Instance.new("TextLabel")
-local UICorner_11 = Instance.new("UICorner")
+local UICorner_7 = Instance.new("UICorner")
 local Main = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
+local UICorner_8 = Instance.new("UICorner")
+local ArenaTP = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local BobFarm = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local ON = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
 
 --Properties:
 
@@ -74,66 +72,6 @@ CloseUI.TextSize = 20.000
 
 UICorner_3.Parent = CloseUI
 
-ArenaTP.Name = "ArenaTP"
-ArenaTP.Parent = DestUI
-ArenaTP.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-ArenaTP.BackgroundTransparency = 0.100
-ArenaTP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ArenaTP.BorderSizePixel = 0
-ArenaTP.Position = UDim2.new(0.21192053, 0, 0.193771631, 0)
-ArenaTP.Size = UDim2.new(0, 350, 0, 33)
-ArenaTP.Font = Enum.Font.FredokaOne
-ArenaTP.Text = "Teleport to Arena (Do not use if you not in lobby)"
-ArenaTP.TextColor3 = Color3.fromRGB(255, 255, 255)
-ArenaTP.TextSize = 17.000
-
-UICorner_4.Parent = ArenaTP
-
-BobFarm.Name = "Bob Farm"
-BobFarm.Parent = DestUI
-BobFarm.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-BobFarm.BackgroundTransparency = 0.100
-BobFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
-BobFarm.BorderSizePixel = 0
-BobFarm.Position = UDim2.new(0.211920515, 0, 0.32310915, 0)
-BobFarm.Size = UDim2.new(0, 301, 0, 33)
-BobFarm.Font = Enum.Font.FredokaOne
-BobFarm.Text = "Bob Farm (You need to quit to stop)       "
-BobFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
-BobFarm.TextSize = 17.000
-
-UICorner_5.Parent = BobFarm
-
-ON.Name = "ON"
-ON.Parent = DestUI
-ON.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-ON.BackgroundTransparency = 0.100
-ON.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ON.BorderSizePixel = 0
-ON.Position = UDim2.new(0.725382149, 0, 0.32310915, 0)
-ON.Size = UDim2.new(0, 58, 0, 33)
-ON.Font = Enum.Font.FredokaOne
-ON.Text = "ON"
-ON.TextColor3 = Color3.fromRGB(0, 255, 0)
-ON.TextSize = 17.000
-
-UICorner_6.Parent = ON
-
-InvsButton.Name = "InvsButton"
-InvsButton.Parent = DestUI
-InvsButton.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
-InvsButton.BackgroundTransparency = 0.100
-InvsButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-InvsButton.BorderSizePixel = 0
-InvsButton.Position = UDim2.new(0.211920515, 0, 0.446137547, 0)
-InvsButton.Size = UDim2.new(0, 350, 0, 33)
-InvsButton.Font = Enum.Font.FredokaOne
-InvsButton.Text = "Invisibility (Need to use ghost)"
-InvsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-InvsButton.TextSize = 17.000
-
-UICorner_7.Parent = InvsButton
-
 FunctiosPart.Name = "FunctiosPart"
 FunctiosPart.Parent = DestUI
 FunctiosPart.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
@@ -142,7 +80,7 @@ FunctiosPart.BorderSizePixel = 0
 FunctiosPart.Position = UDim2.new(0, 0, 0.173010379, 0)
 FunctiosPart.Size = UDim2.new(0, 89, 0, 239)
 
-UICorner_8.Parent = FunctiosPart
+UICorner_4.Parent = FunctiosPart
 
 Moresoon.Name = "More soon"
 Moresoon.Parent = FunctiosPart
@@ -158,7 +96,7 @@ Moresoon.TextColor3 = Color3.fromRGB(255, 255, 255)
 Moresoon.TextSize = 17.000
 Moresoon.TextTransparency = 0.100
 
-UICorner_9.Parent = Moresoon
+UICorner_5.Parent = Moresoon
 
 Frame.Parent = Moresoon
 Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -169,7 +107,7 @@ Frame.Position = UDim2.new(1.20987689, 0, -1.1818161, 0)
 Frame.Size = UDim2.new(0, 393, 0, 219)
 Frame.Visible = false
 
-UICorner_10.Parent = Frame
+UICorner_6.Parent = Frame
 
 Title_2.Name = "Title"
 Title_2.Parent = Frame
@@ -183,7 +121,7 @@ Title_2.Text = "Coming soon"
 Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.TextSize = 20.000
 
-UICorner_11.Parent = Title_2
+UICorner_7.Parent = Title_2
 
 Main.Name = "Main"
 Main.Parent = FunctiosPart
@@ -199,11 +137,56 @@ Main.TextColor3 = Color3.fromRGB(255, 255, 255)
 Main.TextSize = 17.000
 Main.TextTransparency = 0.100
 
-UICorner_12.Parent = Main
+UICorner_8.Parent = Main
+
+ArenaTP.Name = "ArenaTP"
+ArenaTP.Parent = DestUI
+ArenaTP.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+ArenaTP.BackgroundTransparency = 0.100
+ArenaTP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ArenaTP.BorderSizePixel = 0
+ArenaTP.Position = UDim2.new(0.21192053, 0, 0.193771631, 0)
+ArenaTP.Size = UDim2.new(0, 350, 0, 33)
+ArenaTP.Font = Enum.Font.FredokaOne
+ArenaTP.Text = "Teleport to Arena (Do not use if you not in lobby)"
+ArenaTP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ArenaTP.TextSize = 17.000
+
+UICorner_9.Parent = ArenaTP
+
+BobFarm.Name = "Bob Farm"
+BobFarm.Parent = DestUI
+BobFarm.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+BobFarm.BackgroundTransparency = 0.100
+BobFarm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BobFarm.BorderSizePixel = 0
+BobFarm.Position = UDim2.new(0.211920515, 0, 0.32310915, 0)
+BobFarm.Size = UDim2.new(0, 301, 0, 33)
+BobFarm.Font = Enum.Font.FredokaOne
+BobFarm.Text = "Bob Farm (You need to quit to stop)       "
+BobFarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+BobFarm.TextSize = 17.000
+
+UICorner_10.Parent = BobFarm
+
+ON.Name = "ON"
+ON.Parent = DestUI
+ON.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+ON.BackgroundTransparency = 0.100
+ON.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ON.BorderSizePixel = 0
+ON.Position = UDim2.new(0.725382149, 0, 0.32310915, 0)
+ON.Size = UDim2.new(0, 58, 0, 33)
+ON.Font = Enum.Font.FredokaOne
+ON.Text = "ON"
+ON.TextColor3 = Color3.fromRGB(0, 255, 0)
+ON.TextSize = 17.000
+
+UICorner_11.Parent = ON
 
 -- Scripts:
 
-local function OYQR_fake_script() -- ScreenGui.LocalScript 
+local function DOYU_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
 	frame = script.Parent.DestUI
@@ -211,16 +194,16 @@ local function OYQR_fake_script() -- ScreenGui.LocalScript
 	frame.Selectable = true
 	frame.Active = true
 end
-coroutine.wrap(OYQR_fake_script)()
-local function WXENJB_fake_script() -- CloseUI.LocalScript 
+coroutine.wrap(DOYU_fake_script)()
+local function ESJEE_fake_script() -- CloseUI.LocalScript 
 	local script = Instance.new('LocalScript', CloseUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(WXENJB_fake_script)()
-local function MQNZ_fake_script() -- ArenaTP.Teleporter 
+coroutine.wrap(ESJEE_fake_script)()
+local function HXTXMVK_fake_script() -- ArenaTP.Teleporter 
 	local script = Instance.new('LocalScript', ArenaTP)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -238,8 +221,8 @@ local function MQNZ_fake_script() -- ArenaTP.Teleporter
 		
 	end)
 end
-coroutine.wrap(MQNZ_fake_script)()
-local function ODQJ_fake_script() -- ON.LocalScript 
+coroutine.wrap(HXTXMVK_fake_script)()
+local function LNQSKOO_fake_script() -- ON.LocalScript 
 	local script = Instance.new('LocalScript', ON)
 
 	script.Parent.MouseButton1Down:connect(function()
@@ -271,13 +254,4 @@ local function ODQJ_fake_script() -- ON.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ODQJ_fake_script)()
-local function YJEE_fake_script() -- InvsButton.Teleporter 
-	local script = Instance.new('LocalScript', InvsButton)
-
-	script.Parent.MouseButton1Down:connect(function()
-		game:GetService("ReplicatedStorage"):WaitForChild("Ghostinvisibilityactivated"):FireServer()
-
-end
-
-coroutine.wrap(YJEE_fake_script)()
+coroutine.wrap(LNQSKOO_fake_script)()

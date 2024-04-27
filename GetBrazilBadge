@@ -1,0 +1,1 @@
+firetouchinterest(game.Players.LocalPlayer.Character:WaitForChild("Head"), workspace.Lobby.brazil.portal.TouchInterest.Parent, 0)
